@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 200 15% 6%;
+    --foreground: 180 10% 90%;
+
+    --card: 200 12% 10%;
+    --card-foreground: 180 10% 90%;
+
+    --popover: 200 12% 10%;
+    --popover-foreground: 180 10% 90%;
+
+    --primary: 170 80% 50%;
+    --primary-foreground: 200 15% 6%;
+
+    --secondary: 200 12% 14%;
+    --secondary-foreground: 180 10% 80%;
+
+    --muted: 200 10% 16%;
+    --muted-foreground: 200 10% 55%;
+
+    --accent: 160 70% 45%;
+    --accent-foreground: 200 15% 6%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 200 15% 18%;
+    --input: 200 15% 18%;
+    --ring: 170 80% 50%;
+
+    --radius: 0.75rem;
+
+    --glow-primary: 0 0 40px hsl(170 80% 50% / 0.15);
+    --glow-accent: 0 0 40px hsl(160 70% 45% / 0.15);
+
+    --sidebar-background: 200 15% 8%;
+    --sidebar-foreground: 180 10% 90%;
+    --sidebar-primary: 170 80% 50%;
+    --sidebar-primary-foreground: 200 15% 6%;
+    --sidebar-accent: 200 12% 14%;
+    --sidebar-accent-foreground: 180 10% 90%;
+    --sidebar-border: 200 15% 18%;
+    --sidebar-ring: 170 80% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
+  }
+
+  .glow-border {
+    box-shadow: var(--glow-primary);
+    border-color: hsl(var(--primary) / 0.3);
+  }
+
+  .glass {
+    @apply bg-card/60 backdrop-blur-xl border border-border/50;
+  }
+}
