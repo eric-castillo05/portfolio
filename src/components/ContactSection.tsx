@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import { Mail, Linkedin, Github, FileText } from "lucide-react";
 
 const links = [
-  { icon: Mail, label: "Email", href: "mailto:hello@example.com", text: "hello@example.com" },
-  { icon: Linkedin, label: "LinkedIn", href: "#", text: "linkedin.com/in/tu-perfil" },
-  { icon: Github, label: "GitHub", href: "#", text: "github.com/tu-usuario" },
+  { icon: Mail, label: "Email", href: "mailto:ericcastillo005@gmail.com", text: "ericcastillo005@gmail.com" },
+  { icon: Linkedin, label: "LinkedIn", href: "#", text: "linkedin.com/in/eric-benitez-castillo" },
+  { icon: Github, label: "GitHub", href: "#", text: "github.com/eric-castillo05" },
   { icon: FileText, label: "CV", href: "#", text: "Descargar CV" },
 ];
 
